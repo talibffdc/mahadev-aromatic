@@ -14,7 +14,7 @@ export function OurProcess() {
           src="/images/floral-bg-3.jpg"
           alt=""
           fill
-          className="object-cover opacity-[0.05]"
+          className="object-cover opacity-[0.10]"
           priority={false}
         />
       </div>

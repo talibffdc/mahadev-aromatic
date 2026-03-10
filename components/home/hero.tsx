@@ -74,7 +74,7 @@ export function Hero() {
           src="/images/hero-floral-bg.jpg"
           alt=""
           fill
-          className="object-cover opacity-[0.08]"
+          className="object-cover opacity-[0.15]"
           priority
         />
       </div>

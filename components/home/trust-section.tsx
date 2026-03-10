@@ -19,7 +19,7 @@ export function TrustSection() {
           src="/images/floral-bg-1.jpg"
           alt=""
           fill
-          className="object-cover opacity-[0.08]"
+          className="object-cover opacity-[0.15]"
           priority={false}
         />
       </div>

@@ -47,7 +47,7 @@ export function ProductCategories() {
           src="/images/floral-bg-1.jpg"
           alt=""
           fill
-          className="object-cover opacity-[0.06]"
+          className="object-cover opacity-[0.12]"
           priority={false}
         />
       </div>

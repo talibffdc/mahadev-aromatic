@@ -14,7 +14,7 @@ export function ContactCta() {
           src="/images/floral-bg-3.jpg"
           alt=""
           fill
-          className="object-cover opacity-[0.07]"
+          className="object-cover opacity-[0.12]"
           priority={false}
         />
       </div>
