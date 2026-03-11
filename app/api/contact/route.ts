@@ -41,6 +41,26 @@ async function sendWithResend(data: {
 }
 
 export async function POST(request: NextRequest) {
+  // make sure required environment variables are set
+  if (
+    !process.env.RESEND_API_KEY ||
+    !process.env.EMAIL_FROM ||
+    !process.env.EMAIL_TO
+  ) {
+    console.error("missing one or more required env vars", {
+      RESEND_API_KEY: !!process.env.RESEND_API_KEY,
+      EMAIL_FROM: process.env.EMAIL_FROM,
+      EMAIL_TO: process.env.EMAIL_TO,
+    });
+    return new Response(
+      JSON.stringify({
+        success: false,
+        error: "Server misconfiguration: environment variables not set",
+      }),
+      { status: 500 }
+    );
+  }
+
   const json = await request.json();
   const result = contactSchema.safeParse(json);
   if (!result.success) {
