@@ -204,7 +204,7 @@ export function ContactForm() {
               <SelectItem value="gcms-analysis">GCMS / GLC Analysis</SelectItem>
               <SelectItem value="fragrance-matching">Fragrance Matching</SelectItem>
               <SelectItem value="raw-material-testing">Raw Material Testing</SelectItem>
-              <SelectItem value="industrial">Industrial Fragrance Solutions</SelectItem>
+              <SelectItem value="industrial">Industrial Fragrances Solutions</SelectItem>
               <SelectItem value="product-inquiry">Product Inquiry</SelectItem>
               <SelectItem value="other">Other</SelectItem>
             </SelectContent>
