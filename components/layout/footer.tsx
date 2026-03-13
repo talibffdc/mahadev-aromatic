@@ -109,20 +109,81 @@ export function Footer() {
                   {COMPANY.email}
                 </a>
               </li>
-              <li className="flex items-start gap-3">
+            </ul>
+
+            {/* Locations */}
+            <div className="mt-6 flex flex-col gap-5">
+              {/* Plant Unit */}
+              <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
                 <div className="flex flex-col gap-1">
-                  <span className="text-sm text-muted-foreground">
-                    {COMPANY.address}
+                  <span className="text-xs font-semibold uppercase tracking-wide text-foreground">
+                    Plant Unit
                   </span>
-                  {COMPANY.gst && (
-                    <span className="text-xs text-muted-foreground">
-                      GST: {COMPANY.gst}
-                    </span>
-                  )}
+                  <span className="text-sm text-muted-foreground">
+                    Mahadev Aromatics
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Plot No. 69, Phase-3, Sector-24
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    HSIIDC Industrial Estate, Barhi
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Sonipat, Haryana 131101, India
+                  </span>
+                  <span className="text-xs text-muted-foreground">
+                    GST: {COMPANY.gst}
+                  </span>
                 </div>
-              </li>
-            </ul>
+              </div>
+
+              {/* Creative Centre */}
+              <div className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-foreground">
+                    Creative Centre
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Plot No. A-26
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Arti Nagar, Jagatpura
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Jaipur, Rajasthan 302017, India
+                  </span>
+                </div>
+              </div>
+
+              {/* Kannauj Natural Manufacturing Unit */}
+              <div className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-foreground">
+                    Kannauj Natural Manufacturing Unit
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Plot No. 308
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Sekhpura Area
+                  </span>
+                  <span className="text-sm text-muted-foreground">
+                    Kannauj, Uttar Pradesh 209725, India
+                  </span>
+                  <a
+                    href="http://fragranzia.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gold transition-colors hover:text-gold/80"
+                  >
+                    fragranzia.in
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
