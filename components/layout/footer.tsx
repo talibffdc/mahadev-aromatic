@@ -112,7 +112,11 @@ export function Footer() {
             </ul>
 
             {/* Locations */}
-            <div className="mt-6 flex flex-col gap-5">
+            <h4 className="mt-6 font-serif text-sm font-semibold uppercase tracking-wider text-foreground">
+              Locations
+            </h4>
+            <div className="gold-line mt-3 w-12" />
+            <div className="mt-4 flex flex-col gap-5">
               {/* Plant Unit */}
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
